@@ -58,7 +58,7 @@ function App() {
         
       {images && images.map((image, i) => {
         return (
-          <><p key={i}>{image.description} </p><img src={`api/image/${image.file_path}`} style={{ width: '300px' }} /></>
+          <><p key={i}>{image.description} </p><img src={`api/image/${image.file_name}`} style={{ width: '300px' }} /></>
           
 
         );
