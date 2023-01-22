@@ -28,6 +28,37 @@
   color: #61dafb;
 }
 
+form {
+  margin-top: 30px ;
+}
+input{
+  height: 26px;
+}
+
+
+button {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+  background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  height: 32px;
+  width: 100px;
+}
+
+button:hover {
+  -webkit-transform: translate(0, -2px);
+  transform: translate(0, -2px);
+  color: #fff;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
