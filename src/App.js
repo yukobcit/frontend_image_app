@@ -21,11 +21,13 @@ function App() {
   const submit = async event => {
     event.preventDefault() 
     const formData = new FormData()
-
     formData.append("image", file)
     formData.append("description", description)
     // Send the file and description to the server
+    console.log("testing")
+    // const result = await axios.post('http://image_app.yuko-ssd.store/api/images', formData, { headers: {'Content-Type': 'multipart/form-data'}})
     const result = await axios.post('/api/images', formData, { headers: {'Content-Type': 'multipart/form-data'}})
+    console.log(result);
     setImages([result.data, ...images])
   }
 
@@ -33,6 +35,7 @@ function App() {
 
     <div className="App">
       <h1>Image Uploader</h1>
+      TESTING
       <form onSubmit={submit}>
 
         <input
